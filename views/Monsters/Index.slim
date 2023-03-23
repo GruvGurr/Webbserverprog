@@ -1,0 +1,10 @@
+ol
+  - monsters.each do |monster|
+    li 
+      a href="monsters/#{monster['MonsterId']}" #{monster["Title"]}
+      a href="monsters/#{monster['MosnterId']}/edit" Uppdatera
+      form method="POST" action="mosnters/#{monster['MosnterId']}/delete"
+         input type="submit" value="Delete"
+      
+
+/*delete
